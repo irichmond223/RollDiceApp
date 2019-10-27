@@ -18,34 +18,36 @@ namespace Lab6
             Random rnd = new Random();
             return rnd.Next(1, 7);
         }
-
-        public static int Rolls()
+        public class DiceRollerApp
         {
-            int diceOne = 0;
-            int diceTwo = 0;
-
-            diceOne = RandomNum1();
-            diceTwo = RandomNum2();
-
-            Console.WriteLine("Roll 1: ");
-            Console.WriteLine(diceOne);
-            Console.WriteLine(diceTwo);
-
-            int sum = diceOne + diceTwo;
-
-            if (sum == 12)
+            public int Rolls()
             {
-                Console.WriteLine("Box Cars");
+                int diceOne = 0;
+                int diceTwo = 0;
+
+                diceOne = RandomNum1();
+                diceTwo = RandomNum2();
+
+                Console.WriteLine("Roll 1: ");
+                Console.WriteLine(diceOne);
+                Console.WriteLine(diceTwo);
+
+                int sum = diceOne + diceTwo;
+
+                if (sum == 12)
+                {
+                    Console.WriteLine("Box Cars");
+                }
+                else if (sum == 2)
+                {
+                    Console.WriteLine("Snake Eyes");
+                }
+                else if (sum == 7 || sum == 11)
+                {
+                    Console.WriteLine("Craps");
+                }
+                return sum;
             }
-            else if (sum == 2)
-            {
-                Console.WriteLine("Snake Eyes");
-            }
-            else if (sum == 7 || sum == 11)
-            {
-                Console.WriteLine("Craps");
-            }
-            return sum;
         }
 
         static void Main(string[] args)
@@ -69,7 +71,12 @@ namespace Lab6
                         try
                         {
                             int intUserInput = int.Parse(Console.ReadLine());
-                            Rolls();
+
+                            //An objects that refers to an instance of a class.
+                            DiceRollerApp firstClass = new DiceRollerApp();
+                            firstClass.Rolls();
+
+
                         }
                         catch (FormatException)
                         {

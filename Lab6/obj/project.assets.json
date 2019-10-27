@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ilona\\Desktop\\C#\\Lab6\\Lab6\\Lab6.csproj",
+      "projectUniqueName": "C:\\Users\\ilona\\source\\repos\\C#\\Methods\\Lab6\\Lab6\\Lab6.csproj",
       "projectName": "Lab6",
-      "projectPath": "C:\\Users\\ilona\\Desktop\\C#\\Lab6\\Lab6\\Lab6.csproj",
+      "projectPath": "C:\\Users\\ilona\\source\\repos\\C#\\Methods\\Lab6\\Lab6\\Lab6.csproj",
       "packagesPath": "C:\\Users\\ilona\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ilona\\Desktop\\C#\\Lab6\\Lab6\\obj\\",
+      "outputPath": "C:\\Users\\ilona\\source\\repos\\C#\\Methods\\Lab6\\Lab6\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
